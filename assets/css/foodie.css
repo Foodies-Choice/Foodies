@@ -1,0 +1,31 @@
+.jumbotron {
+	background-image: url("../images/choping-onion.gif");
+	text-align: center;
+	background-size: cover;
+}
+
+.jumbotron h1,
+.jumbotron p{
+	color: white;
+}
+
+#search {
+	color: black;
+}
+.j-background{
+	background-color: rgba(0, 0, 0, .4);
+}
+
+#restaurants{
+	float: left;
+	width: 50%;
+	text-align: right;
+	border-right: 5px solid black;
+	padding-right: 3%;
+}
+
+#recipes {
+	float: left;
+	width: 50%;
+	padding-left: 3%;
+}
