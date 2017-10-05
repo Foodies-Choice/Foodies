@@ -5,34 +5,38 @@
     <title>Foodie's Choice</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/foodie.css">
     <script type="text/javascript" src="assets/javascript/jquery-3.2.1.js"></script>
 </head>
 
 <body>
-    <div id="container">
-        <div class="header">
-            <div id="row">
-                <div class="col-lg-10">
+    <!-- <div class="container-fluid"> -->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12 j-background">
                     <h1>Foodie's Choice</h1>
+                    <p>The place where you can search for the type of food you want to eat and get both restaurant and a recipe to help decide.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 text-right j-background">
+                    <p>Type of Food: <span><input type="text" id="cuisine"></span></p>
+                    
+                </div>
+                <div class="col-xs-6 text-left j-background">
+                    <p>Location: <span><input type="text" id="location"></span><span><button type="submit" id="search">Search</button></span></p>
+                    
+                    
                 </div>
             </div>
         </div>
-        <div id="choices">
-            <div id="row">
-                <div class="col-lg-5">
-                    <p>Type of Food</p>
-                    <input type="text" id="cuisine">
-                </div>
-                <div class="col-lg-5">
-                    <p>Location</p>
-                    <input type="text" id="location">
-                    <button type="submit" id="search">Search</button>
-                </div>
-            </div>
-        </div>
+    <!-- </div> -->
+    <div id="restaurants">
+    <p>test</p>
     </div>
-    <form>
-    </form>
+    <div id="recipes">
+    <p>test2</p>
+    </div>
 </body>
 
 </html>
