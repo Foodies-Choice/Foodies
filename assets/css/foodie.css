@@ -12,9 +12,11 @@
 #search,
 input {
 	color: black;
+	font-size: 21px;
 }
 .j-background{
 	background-color: rgba(0, 0, 0, .4);
+
 }
 
 #restaurants{
@@ -29,4 +31,15 @@ input {
 	float: left;
 	width: 50%;
 	padding-left: 3%;
+}
+
+#bottom {
+	/*background-color: rgba(0, 0, 0, .4);*/
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#top{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
