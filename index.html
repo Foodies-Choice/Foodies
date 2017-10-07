@@ -5,52 +5,62 @@
     <title>Foodie's Choice</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/foodie.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/project.js"></script>
     <script type="text/javascript" src="assets/javascript/jquery-3.2.1.js"></script>
 </head>
 
 <body>
-<!-- <div class="container-fluid"> -->
-        <div class="jumbotron">
-            <div class="row">
+    <!-- <div class="container-fluid"> -->
+    <div class="jumbotron">
+        <div class="row">
             <div class="col-xs-1"></div>
-                <div id="top" class="col-xs-10 j-background">
-                    <h1>Foodie's Choice</h1>
-                    <p>The place where you can search for the type of food you want to eat and get both restaurant and a recipe to help decide.</p>
-                </div>
+            <div id="top" class="col-xs-10 j-background">
+                <h1>Foodie's Choice</h1>
+                <p>The place where you can search for the type of food you want to eat and get both restaurant and a recipe to help decide.</p>
             </div>
-            <div class="row">
+        </div>
+        <div class="row">
             <div class="col-xs-1"></div>
-            <div >
-                <div id="bottom" class="col-xs-5 text-right j-background">
+            <div id="bottom">
+                <div class="col-xs-5 text-right ">
                     <p><span><input type="text" id="cuisine" placeholder="Type of Food"></span></p>
-                    
                 </div>
-                <div id="bottom" class="col-xs-5 text-left j-background">
-                    <p><span><input type="text" id="location" placeholder="Location"></span><span><button type="submit" id="search">Search</button></span></p>
-                    
-                    
-                </div>
+                <div class="col-xs-5 text-left ">
+                    <p><span><input type="text" id="location" placeholder="Location"></span>
+                        <select>
+                            <option value="New York">NY</option>
+                            <option value="New Jersey">NJ</option>
+                        </select>
+                        <span><button type="submit" id="search">Search</button></span></p>
                 </div>
             </div>
         </div>
+        <a href='#' class='advanced'>Advanced Options</a>
+        <div id='advancedOptions'>
+            <form>
+                <label>
+                    Beef
+                    <input type="checkbox" value="beef" />
+                </label>
+                <label>
+                    Chicken
+                    <input type="checkbox" value="chicken" />
+                </label>
+                <label>
+                    Pork
+                    <input type="checkbox" value="pork" />
+                </label>
+            </form>
+        </div>
+    </div>
     <!-- </div> -->
     <div id="restaurants">
-    <p>test</p>
+        <p>test</p>
     </div>
     <div id="recipes">
-    <p>Recipe</p>
-
-    <div id="food-button"></div>
-    <div id="recipe-display"></div>
-
+        <p>test2</p>
     </div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="project.js"></script>
-
+    <script type="text/javascript" src="assets/javascript/foodies.js"></script>
+    <script type="text/javascript" src="assets/javascript/project.js"></script>
 </body>
 
 </html>

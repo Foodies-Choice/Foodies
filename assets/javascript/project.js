@@ -12,7 +12,7 @@ function renderButtons() {
         a.addClass("food-ingredient");
         a.attr("data-name", ingredient[i]);
         a.text(ingredient[i]);
-        $("#food-button").append(a);
+        $("#recipes").append(a);
     }
 }
 renderButtons();
@@ -55,7 +55,7 @@ function runQuery() {
             searchDiv.append(inputImage);
             searchDiv.append(oneSummary);
 
-            $("#recipe-display").append(searchDiv);
+            $("#recipes").append(searchDiv);
 
          };
     });
@@ -79,7 +79,7 @@ $("#search").on("click", function(event) {
 
 });
 
-$("#food-button").on("click", ".food-ingredient", function() {
+$("#recipes").on("click", ".food-ingredient", function() {
 
 
     protien = ($(this).text());
