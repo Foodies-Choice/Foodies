@@ -9,10 +9,15 @@
 	color: white;
 }
 
+select {
+	height: 31px;
+}
+
 #search,
-input {
+input,
+select {
 	color: black;
-	font-size: 21px;
+	font-size: 18px;
 }
 .j-background{
 	background-color: rgba(0, 0, 0, .4);
@@ -33,13 +38,9 @@ input {
 	padding-left: 3%;
 }
 
-#bottom {
-	/*background-color: rgba(0, 0, 0, .4);*/
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
 #top{
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
