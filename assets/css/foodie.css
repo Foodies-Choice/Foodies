@@ -9,8 +9,30 @@
 	color: white;
 }
 
+.img-thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+body {
+	background: url("../images/wood.jpg");
+}
+
 select {
 	height: 31px;
+}
+
+.img-thumbnail{
+	padding: 0;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+a:visited{
+	color: black;
 }
 
 #search,
@@ -19,16 +41,20 @@ select {
 	color: black;
 	font-size: 18px;
 }
-.j-background{
+.j-background,
+.food {
 	background-color: rgba(0, 0, 0, .4);
+}
 
+.food {
+	color: white;
 }
 
 #restaurants{
 	float: left;
 	width: 50%;
 	text-align: right;
-	border-right: 5px solid black;
+	border-right: 2px solid black;
 	padding-right: 3%;
 }
 
@@ -36,6 +62,8 @@ select {
 	float: left;
 	width: 50%;
 	padding-left: 3%;
+	padding-right: 10%;
+	border-left: 2px solid black;
 }
 
 #top{
