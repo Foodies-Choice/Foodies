@@ -15,7 +15,9 @@
 }
 
 body {
-	background: url("../images/wood.jpg");
+	position: relative;
+	background-image: url("../images/wood.jpg");
+	background-attachment: fixed;
 }
 
 select {
@@ -27,12 +29,13 @@ select {
 }
 
 a {
-	color: black;
+	color: white;
 	font-weight: bold;
 }
 
 a:visited{
-	color: black;
+	color: white;
+	font-weight: bold;
 }
 
 #search,

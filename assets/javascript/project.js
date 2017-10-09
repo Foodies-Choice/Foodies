@@ -1,4 +1,4 @@
-var ingredient = ["Beef", "Chicken", "Pasta", "Pork", "Salmon"];
+// var ingredient = ["Beef", "Chicken", "Pasta", "Pork", "Salmon"];
 
 var searchTerm = "";
 
@@ -68,7 +68,7 @@ $("#search").on("click", function(event) {
         event.preventDefault();
 
      $(".food").remove();
-     // $(".search-item").remove();
+ 
 
     searchTerm = $("#cuisine").val().trim();
     console.log(searchTerm)
