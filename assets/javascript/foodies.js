@@ -7,4 +7,15 @@ $(document).ready(function() {
             $('#advancedOptions').slideUp();
         }
     });
+
+
+
+    $(window).scroll(function() {
+        var wScroll = $(this).scrollTop();
+
+        if (wScroll > $("#both").offset().top) {
+
+            $("footer").addClass("showing");
+        }
+    });
 });
