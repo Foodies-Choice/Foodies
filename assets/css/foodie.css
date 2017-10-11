@@ -1,10 +1,29 @@
-.jumbotron {
+/*.jumbotron {*/
+	.jumbotron{
     background-image: url("../images/choping-onion.gif");
     text-align: center;
     background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    /*height: 300px;*/
+    padding-bottom: 0;
+    padding-top: 10px;
+
 }
 
+.food{
+	margin-bottom: 10px;
+}
+  #sticky-div.sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 10;
+  }
+
+/*.jumbotron */
 .jumbotron h1,
+/*.jumbotron */
 .jumbotron p {
     color: white;
 }
@@ -12,7 +31,6 @@
 #both{
 	float: left;
 	width: 100%;
-	background: blue;
 	position: relative;
     background-image: url("../images/wood.jpg");
     background-attachment: fixed;
@@ -37,6 +55,7 @@ body {
     position: relative;
     background-image: url("../images/wood.jpg");
     background-attachment: fixed;
+    
 }
 
 select {

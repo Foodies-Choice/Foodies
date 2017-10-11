@@ -73,7 +73,7 @@ $("#search").on("click", function(event) {
     searchTerm = $("#cuisine").val().trim();
     console.log(searchTerm)
 
-
+    $('#cuisine').val("");
 
     queryURL = "https://api.edamam.com/search?q=" + searchTerm + "&app_id=94a55592&app_key=a1ecb2c12ad4a867399b5e4506013a4d";
 
