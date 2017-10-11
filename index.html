@@ -3,41 +3,87 @@
 
 <head>
     <title>Foodie's Choice</title>
+    <link rel="icon" type="image/png" href="assets/images/food2.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/foodie.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <script type="text/javascript" src="assets/javascript/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/javascript/zomato.js"></script>
 </head>
 
 <body>
-    <!-- <div class="container-fluid"> -->
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-xs-12 j-background">
-                    <h1>Foodie's Choice</h1>
-                    <p>The place where you can search for the type of food you want to eat and get both restaurant and a recipe to help decide.</p>
-                </div>
+    <!-- <div ?class="container-fluid"> -->
+    <div class="jumbotron wow bounceInLeft">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div id="top" class="col-sm-10 j-background">
+                <h1 id="head" class="wow bounceInDown">Foodie's Choice <span id="icon" class=".img-thumbnail"><img src="assets/images/food2.png" width="45px" ></span></h1>
+                <p class="wow bounceInUp">The place where you can search for the type of food you want to eat and get both restaurant and a recipe to help decide.</p>
             </div>
-            <div class="row">
-                <div clas="col-xs-6 text-right j-background">
-                    <p>Type of Food: <span><input type="text" id="cuisine"></span></p>
-                    
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div id="bottom" class="wow flip">
+                <div class="col-sm-5 text-right ">
+                    <p><span><input type="text" id="cuisine" placeholder="Type of Food"></span></p>
+
                 </div>
-                <div class="col-xs-6 text-left j-background">
-                    <p>Location: <span><input type="text" id="location"></span><span><button type="submit" id="search">Search</button></span></p>
-                    
-                    
+                <div class="col-sm-5 text-left ">
+                    <p><span><input type="text" id="location" placeholder="City"></span>
+                        <span><button type="submit" id="search">Search</button></span></p>
                 </div>
             </div>
         </div>
+        <a href='#' class='advanced'>Advanced Options</a>
+        <div id='advancedOptions'>
+            <label>
+                Beef
+                <input type="checkbox" value="beef" />
+            </label>
+            <label>
+                Chicken
+                <input type="checkbox" value="chicken" />
+            </label>
+            <label>
+                Pork
+                <input type="checkbox" value="pork" />
+            </label>
+        </div>
+    </div>
     <!-- </div> -->
-    <div id="restaurants">
-    
-    </div>
-    <div id="recipes">
-    <p>test2</p>
-    </div>
-
+    <section id="both">
+        <div id="restaurants">
+            test
+        </div>
+        <div id="recipes">
+        </div>
+        
+    </section>
+    <footer class="not-showing">
+            <div >
+                <div class="row col-sm-3 footer-stuff">
+                    <p><strong>Find Us On</strong></p>
+                    <ul>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="row col-sm-3">
+                </div>
+                <div class="row col-sm-6">
+                    <p><strong>Contact Us</strong></p>
+                    <a href="" id="contact">eyt_rutgers@gmail.com</a>
+                </div>
+            </div>
+        </footer>
+    <script type="text/javascript" src="assets/javascript/foodies.js"></script>
+    <script type="text/javascript" src="assets/javascript/project.js"></script>
+    <script src="assets/javascript/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 
 </html>

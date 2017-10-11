@@ -1,32 +1,119 @@
 .jumbotron {
-	background-image: url("../images/choping-onion.gif");
-	text-align: center;
-	background-size: cover;
+    background-image: url("../images/choping-onion.gif");
+    text-align: center;
+    background-size: cover;
 }
 
 .jumbotron h1,
-.jumbotron p{
-	color: white;
+.jumbotron p {
+    color: white;
+}
+
+#both{
+	float: left;
+	width: 100%;
+	background: blue;
+	position: relative;
+    background-image: url("../images/wood.jpg");
+    background-attachment: fixed;
+    z-index: 2;
+    margin-bottom: 200px;
+}
+
+.img-thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    padding: 0;
+    margin-right: 2%;
+}
+
+#icon {
+    position: relative;
+    top: -7px;
+}
+
+
+body {
+    position: relative;
+    background-image: url("../images/wood.jpg");
+    background-attachment: fixed;
+}
+
+select {
+    height: 31px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:visited {
+    color: white;
+    font-weight: bold;
 }
 
 #search,
-input {
-	color: black;
-}
-.j-background{
-	background-color: rgba(0, 0, 0, .4);
+input,
+select {
+    color: black;
+    font-size: 18px;
 }
 
-#restaurants{
-	float: left;
-	width: 50%;
-	text-align: right;
-	border-right: 5px solid black;
-	padding-right: 3%;
+.j-background,
+.food {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.food {
+    color: white;
+}
+
+#restaurants {
+    float: left;
+    width: 50%;
+    text-align: right;
+    border-right: 2px solid black;
+    padding-right: 3%;
 }
 
 #recipes {
-	float: left;
-	width: 50%;
-	padding-left: 3%;
+    float: left;
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 10%;
+    border-left: 2px solid black;
+}
+
+#top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer-stuff {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.not-showing{
+	display: none;
+}
+.showing {
+	display: block;
+}
+
+#contact {
+	color: red;
 }
