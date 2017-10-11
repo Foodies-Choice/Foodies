@@ -22,10 +22,10 @@
   }
 
 /*.jumbotron */
-.jumbotron h1,
-/*.jumbotron */
+/*.jumbotron h1,
+*//*.jumbotron */
 .jumbotron p {
-    color: white;
+    color: black;
 }
 
 #both{
@@ -82,11 +82,11 @@ select {
 
 .j-background,
 .food {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .food {
-    color: white;
+    color: black;
 }
 
 #restaurants {
