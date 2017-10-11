@@ -9,7 +9,8 @@
 	color: white;
 }
 
-#search {
+#search,
+input {
 	color: black;
 }
 .j-background{
