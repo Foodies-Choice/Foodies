@@ -1,153 +1,141 @@
-/*.jumbotron {*/
-	.jumbotron{
-    background-image: url("../images/choping-onion.gif");
-    text-align: center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    /*height: 300px;*/
-    padding-bottom: 0;
-    padding-top: 10px;
+    .jumbotron {
+        background-image: url("../images/choping-onion.gif");
+        text-align: center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
 
-}
+    h3 {
+        text-align: center;
+    }
 
-h3 {
-    text-align: center;
-}
-.food,
-.food2 {
-	margin-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-  #sticky-div.sticky {
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 10;
+    .food,
+    .food2 {
+        margin-bottom: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 
-  }
+    #sticky-div.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
 
-/*.jumbotron */
-/*.jumbotron h1,
-*//*.jumbotron */
-.jumbotron p {
-    color: black;
-}
+    .jumbotron p {
+        color: black;
+    }
 
-#both{
-	float: left;
-	width: 100%;
-	position: relative;
-    background-image: url("../images/wood.jpg");
-    background-attachment: fixed;
-    z-index: 2;
-    margin-bottom: 200px;
+    #both {
+        float: left;
+        width: 100%;
+        position: relative;
+        background-image: url("../images/wood.jpg");
+        background-attachment: fixed;
+        z-index: 2;
+        margin-bottom: 200px;
+    }
 
-}
+    .img-thumbnail {
+        border: 0 none;
+        box-shadow: none;
+        padding: 0;
+        margin-right: 2%;
+    }
 
-.img-thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    padding: 0;
-    margin-right: 2%;
-}
-
-#icon {
-    position: relative;
-    top: -7px;
-}
+    #icon {
+        position: relative;
+        top: -7px;
+    }
 
 
-body {
-    position: relative;
-    background-image: url("../images/wood.jpg");
-    background-attachment: fixed;
-    
-}
+    body {
+        position: relative;
+        background-image: url("../images/wood.jpg");
+        background-attachment: fixed;
+    }
 
-select {
-    height: 31px;
-}
+    select {
+        height: 31px;
+    }
 
-a {
-    color: white;
-    font-weight: bold;
-}
+    a {
+        color: white;
+        font-weight: bold;
+    }
 
-a:visited {
-    color: white;
-    font-weight: bold;
-}
+    a:visited {
+        color: white;
+        font-weight: bold;
+    }
 
-#search,
-input,
-select {
-    color: black;
-    font-size: 18px;
-}
+    #search,
+    input,
+    select {
+        color: black;
+        font-size: 18px;
+    }
 
-.j-background,
-.food,
-.food2 {
-    background-color: rgba(255, 255, 255, .6);
-}
+    .j-background,
+    .food,
+    .food2 {
+        background-color: rgba(255, 255, 255, .6);
+    }
 
-.food {
-    color: black;
-}
+    .food {
+        color: black;
+    }
 
-#restaurants {
-    float: left;
-    width: 40%;
-    text-align: left;
-    /*border-right: 2px solid black;*/
-    padding-right: 3%;
-    margin-left: 10%;
+    #restaurants {
+        float: left;
+        width: 40%;
+        text-align: left;
+        padding-right: 3%;
+        margin-left: 10%;
+    }
 
-    
+    #recipes {
+        float: right;
+        width: 50%;
+        padding-left: 3%;
+        padding-right: 10%;
+    }
 
-}
+    #top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 
-#recipes {
-    float: right;
-    width: 50%;
-    padding-left: 3%;
-    padding-right: 10%;
-    /*border-left: 2px solid black;*/
-}
+    footer {
+        background: black;
+        color: white;
+        padding: 40px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
-#top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
+    .footer-stuff {
+        max-width: 640px;
+        margin: 0 auto;
+    }
 
-footer {
-    background: black;
-    color: white;
-    padding: 40px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-}
+    .not-showing {
+        display: none;
+    }
 
-.footer-stuff {
-    max-width: 640px;
-    margin: 0 auto;
-}
+    .showing {
+        display: block;
+    }
 
-.not-showing{
-	display: none;
-}
-.showing {
-	display: block;
-}
-
-#contact {
-	color: red;
-}
+    #contact {
+        color: red;
+    }
