@@ -11,14 +11,20 @@
 
 }
 
-.food{
+.food,
+.food2 {
 	margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
   #sticky-div.sticky {
      position: fixed;
      top: 0;
      width: 100%;
      z-index: 10;
+
   }
 
 /*.jumbotron */
@@ -81,7 +87,8 @@ select {
 }
 
 .j-background,
-.food {
+.food,
+.food2 {
     background-color: rgba(255, 255, 255, .4);
 }
 
@@ -91,18 +98,22 @@ select {
 
 #restaurants {
     float: left;
-    width: 50%;
-    text-align: right;
-    border-right: 2px solid black;
+    width: 40%;
+    text-align: left;
+    /*border-right: 2px solid black;*/
     padding-right: 3%;
+    margin-left: 10%;
+
+    
+
 }
 
 #recipes {
-    float: left;
+    float: right;
     width: 50%;
     padding-left: 3%;
     padding-right: 10%;
-    border-left: 2px solid black;
+    /*border-left: 2px solid black;*/
 }
 
 #top {
