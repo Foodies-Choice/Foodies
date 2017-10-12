@@ -1,6 +1,8 @@
 $(document).ready(function() {
     var cities = "";
     var id = "";
+    var effects = ["rotateInDownLeft", "rotateInDownRight", "slideInRight", "slideInLeft", "jackInTheBox", "rollIn", "zoomIn", "slideInDown", "lightSpeedIn", "tada", "rotateInDownLeft", "rotateInDownRight", "slideInRight", "slideInLeft", "jackInTheBox"]
+
 
     $("#search").on("click", function() {
 
@@ -43,7 +45,7 @@ $(document).ready(function() {
 
             var secondQueryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=" +
                 id + "&entity_type=city&q=" + typeFood + "&apikey=0ddbf041422a995ae2524fc0caca1ab8";
-
+console.log(secondQueryURL);
             $.ajax({
                 url: secondQueryURL,
                 method: "GET"
@@ -54,14 +56,18 @@ $(document).ready(function() {
                 var restResults = response.restaurants;
                 // console.log(restResults)
 
-                for (var i = 0; i < restResults.length; i++) {;
+                for (var i = 0; i < 15; i++) {;
 
-                    var restDiv = $("<div class='row food2'>");
-                    var name = $("<H3 id=>").text("Restaurant: " + restResults[i].restaurant.name);
+                    var restDiv = $("<div class='row food2 wow " + effects[i] + "'>");
+                    var name = $("<H3 id=>").text(restResults[i].restaurant.name);
                     var avgCost = $("<p>").text("Average Cost for Two: " + restResults[i].restaurant.average_cost_for_two);
-                    var expense = $("<p>").text("Cost on a scale ranging from 1-4: " + restResults[i].restaurant.price_range);
+                    var expense = $("<p>").text("Cost on a scale from 1-4: " + restResults[i].restaurant.price_range);
                     var menu = $('<a href="' + restResults[i].restaurant.menu_url + '"target="_blank">' + "Menu" + '</a>');
+                    var inputImage = $("<img>");
+            inputImage.attr("src", restResults[i].restaurant.featured_image);
+            inputImage.addClass("col-sm-5 input-image img-thumbnail");
                     restDiv.append(name);
+                    restDiv.append(inputImage);
                     restDiv.append(avgCost);
                     restDiv.append(expense);
                     restDiv.append(menu);
@@ -74,6 +80,7 @@ $(document).ready(function() {
             console.log()
             cities = "";
             id = "";
+            $('#cuisine').val("");
             $("#location").val("");
 
             // });
