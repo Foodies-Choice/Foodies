@@ -61,16 +61,21 @@ console.log(secondQueryURL);
 
                     var restDiv = $("<div class='row food2 wow " + effects[i] + "'>");
                     var name = $("<H3 id=>").text(restResults[i].restaurant.name);
-                    var avgCost = $("<p>").text("Average Cost for Two: " + restResults[i].restaurant.average_cost_for_two);
+                    var rating = $("<p>").text("Rating: " + restResults[i].restaurant.user_rating.rating_text + " " + restResults[i].restaurant.user_rating.aggregate_rating);
+                    var avgCost = $("<p>").text("Average Cost for Two: $" + restResults[i].restaurant.average_cost_for_two);
                     var expense = $("<p>").text("Cost on a scale from 1-4: " + restResults[i].restaurant.price_range);
+                    var address = $("<p>").text(restResults[i].restaurant.location.address);
                     var menu = $('<a href="' + restResults[i].restaurant.menu_url + '"target="_blank">' + "Menu" + '</a>');
                     var inputImage = $("<img>");
             inputImage.attr("src", restResults[i].restaurant.featured_image);
             inputImage.addClass("col-sm-5 input-image img-thumbnail");
                     restDiv.append(name);
                     restDiv.append(inputImage);
+                    restDiv.append(rating);
+                    
                     restDiv.append(avgCost);
                     restDiv.append(expense);
+                    restDiv.append(address);
                     restDiv.append(menu);
 
                     $("#restaurants").append(restDiv);
