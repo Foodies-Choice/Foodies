@@ -9,6 +9,7 @@ $(document).ready(function() {
         event.preventDefault();
 
         $(".food").remove();
+        $(".food2").remove();
 
 
         var city = $("#location").val().trim();
