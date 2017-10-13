@@ -76,12 +76,16 @@
         font-weight: bold;
     }
 
-    #search,
     input,
     select {
         color: black;
         font-size: 18px;
     }
+
+     #search {
+        color: white;
+        margin-bottom: 2px;
+     }
 
     .j-background,
     .food,
@@ -112,13 +116,16 @@
     }
 
     footer {
-        background: black;
-        color: white;
+        background-image: url("../images/Marble.jpg");
+        background-attachment: fixed;
+        color: black;
         padding: 40px 0;
         position: fixed;
         bottom: 0;
         width: 100%;
     }
+
+    
 
     .footer-stuff {
         max-width: 640px;
@@ -131,6 +138,13 @@
 
     .showing {
         display: block;
+    }
+
+    #twitter,
+    #facebook,
+    #instagram {
+        color: black;
+        font-weight: bold;
     }
 
     #contact {
