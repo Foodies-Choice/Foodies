@@ -45,8 +45,15 @@ $(document).ready(function() {
 
         queryURL = "https://api.edamam.com/search?q=" + searchTerm + "&app_id=94a55592&app_key=a1ecb2c12ad4a867399b5e4506013a4d";
 
-        runQuery();
+        if (($.isNumeric($("#location").val()) === true) || ($.isNumeric($("#cuisine").val()) === true)) {
 
+           
+
+
+
+        } else {
+        runQuery();
+}
     });
 
 })
