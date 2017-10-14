@@ -25,14 +25,13 @@ $(document).ready(function() {
             "https://developers.zomato.com/api/v2.1/locations?query=" +
             city + "&apikey=0ddbf041422a995ae2524fc0caca1ab8";
 
-        if (($.isNumeric($("#location").val()) === true) || ($.isNumeric($("#cuisine").val()) === true)) {
 
-            //replace this
-            // alert("that is a number!");
 
-            $("#search").on("click", function() {
+        if (($.isNumeric($("#location").val()) === true) || ($.isNumeric($("#cuisine").val()) === true) || city === "" || typeFood === "" ) {
+
+        
                 modal.style.display = "block";
-            });
+          
 
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
@@ -81,8 +80,8 @@ $(document).ready(function() {
 
                     var restResults = response.restaurants;
 
-                    for (var i = 0; i < 15; i++) {;
-
+                    for (var i = 0; i < 15; i++) {
+                           
                         var restDiv = $("<div class='row food2 wow " + effects[i] + "'>");
                         var name = $("<H3 id=>").text(restResults[i].restaurant.name);
                         var rating = $("<p>").text("Rating: " + restResults[i].restaurant.user_rating.rating_text + " " + restResults[i].restaurant.user_rating.aggregate_rating);
@@ -91,7 +90,7 @@ $(document).ready(function() {
                         var address = $("<p>").text(restResults[i].restaurant.location.address);
                         var menu = $('<a href="' + restResults[i].restaurant.menu_url + '"target="_blank">' + "Menu" + '</a>');
                         var inputImage = $("<img>");
-                        inputImage.attr("src", restResults[i].restaurant.featured_image);
+                        inputImage.attr("src", restResults[i].restaurant.featured_image || "assets/images/restaurant.jpg");
                         inputImage.addClass("col-sm-5 input-image img-thumbnail");
                         restDiv.append(name);
                         restDiv.append(inputImage);

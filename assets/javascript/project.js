@@ -41,13 +41,21 @@ $(document).ready(function() {
 
         $(".food").remove();
 
+
+if ($("#location").val() !== "") {
+
+        if (($.isNumeric($("#location").val()) === false) && ($.isNumeric($("#cuisine").val()) === false)) {
+
+        
+
         searchTerm = $("#cuisine").val().trim();
 
         queryURL = "https://api.edamam.com/search?q=" + searchTerm + "&app_id=94a55592&app_key=a1ecb2c12ad4a867399b5e4506013a4d";
 
         
         runQuery();
-
+    }
+}
     });
 
 })
