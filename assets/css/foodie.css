@@ -1,3 +1,6 @@
+html *{
+    font-family: georgia;
+}
     .jumbotron {
         background-image: url("../images/choping-onion.gif");
         text-align: center;
@@ -20,7 +23,9 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-
+.dev {
+    font-weight: bold;
+}
     #sticky-div.sticky {
         position: fixed;
         top: 0;
@@ -28,6 +33,9 @@
         z-index: 10;
     }
 
+footer h2{
+    text-align: right;
+}
     .jumbotron p,
     .food {
         color: black;
@@ -128,7 +136,7 @@
     
 
     .footer-stuff {
-        max-width: 640px;
+        float: left;
         margin: 0 auto;
     }
 
@@ -164,6 +172,9 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
 
 }
 

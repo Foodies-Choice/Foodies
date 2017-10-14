@@ -60,15 +60,6 @@ $(document).ready(function() {
             }).done(function(response) {
                 var results = response.location_suggestions;
 
-                function createArrays() {
-                    for (var i = 0; i < 1; i++) {
-                        cities = results[i].city_name;
-                        id = results[i].entity_id;
-
-                    };
-                };
-                createArrays();
-
                 var secondQueryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=" +
                     id + "&entity_type=city&q=" + typeFood + "&apikey=0ddbf041422a995ae2524fc0caca1ab8";
 
